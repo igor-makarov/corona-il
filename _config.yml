@@ -1,0 +1,73 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: קורונה בישראל 
+lang: he_IL
+name: קורונה בישראל
+#email: bla@example.com
+description: >- 
+  תרשים הדבקה בנגיף
+baseurl: "" # the subpath of your site, e.g. /blog
+
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+google_analytics: true
+webmaster_verifications:
+  # google: 111
+  # bing: 1234
+  # alexa: 1234
+  # yandex: 1234
+  # baidu: 1234
+
+facebook:
+  publisher: https://www.facebook.com/XXXXX
+  admins: XXXX
+#logo: /og_image.png
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /og_image.png
+
+social:
+  name: קורונה בישראל
+  # links:
+  #   - https://www.facebook.com/fb_id
+
+# minima: 
+#   social_links:
+#     facebook: id
+#     github: id
+
+# facebook_username: id
+# github_username: id
+
+exclude:
+  - "*.template.md"
+  - "*.sh"
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

@@ -1,0 +1,119 @@
+<script src="https://unpkg.com/mermaid@8.4.8/dist/mermaid.min.js"></script>
+<script>
+    var config = {
+        startOnLoad:true,
+        flowchart:{
+            useMaxWidth:true,
+            htmlLabels:true,
+            curve: 'basis'
+        }
+    };
+    mermaid.initialize(config);
+</script>
+<style>
+.node .label {
+  font-size: 9pt;
+}
+</style>
+
+<div align="center" class="mermaid">
+
+graph TD;
+
+  abroad["חו#quot;ל"]
+  az[אזרבייז'ן]
+  at[אוסטריה]
+  be[בלגיה]
+  ch[שוויץ]
+  de[גרמניה]
+  es[ספרד]
+  fr[צרפת]
+  gr[יוון]
+  it[איטליה]
+  ja[יפן]
+  tenerife["טנריף <br> (ספרד)"]
+  group_de_1[קבוצת תיירים מגרמניה]
+  group_gr_1[קבוצת צליינים מיוון]
+  tourist_fr_1[תייר מצרפת]
+  click group_de_1 "https://t.me/MOHreport/2882"
+
+  %% From abroad
+  abroad-->az
+  abroad-->at
+  abroad-->be
+  abroad-->ch
+  abroad-->de
+  abroad-->es
+  abroad-->fr
+  abroad-->gr
+  abroad-->it
+  abroad-->ja
+  abroad-->tenerife
+  az-->51
+  at-->21
+  at-->27
+  at-->39
+  at-->58
+  be-->36
+  ch-->19
+  ch-->40
+  ch-->41
+  ch-- "דרך איטליה" -->38
+  de-->53
+  de-->54
+  de-->55
+  de-->group_de_1
+  es-->18
+  es-->20
+  es-->22
+  es-->25
+  es-->42
+  fr-->43
+  fr-->tourist_fr_1
+  tourist_fr_1-->45
+  tourist_fr_1-->28
+  gr-->group_gr_1
+  group_gr_1-->24
+  group_gr_1-->16
+  it-->3
+  it-->6
+  it-->7
+  it-->8
+  it-->9
+  it-->11
+  it-->12
+  it-->15
+  it-->17
+  it-->23
+  %% via 11,12:
+  it-->31 
+  ja-->1
+  ja-->2
+  ja-->5
+  tenerife-->26
+  tenerife-->35
+  tenerife-->37
+  tenerife-->44
+  tenerife-->49
+  tenerife-->50
+
+  %% TBD
+  29[29 <br> ללא מקור הדבקה מוגדר]
+  56[56 <br> בחקירה]
+
+  %% From other patients in Israel
+  3-->4
+  3-->10
+  10-->13
+  10-->14
+  18-->30
+  22-->32
+  22-->33
+  22-->34
+  28-->52
+  29-- ?? -->46
+  29-->47
+  29-->48
+  29-->57
+
+</div>
